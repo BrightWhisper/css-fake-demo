@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="main.css">
     <style type="text/css">
         .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
         }
     </style>
     <script src="//at.alicdn.com/t/font_1230083_i4aj6u1l6o.js"></script>
@@ -19,7 +20,7 @@
 <body>
     <div class="wrapper">
         <span class="input-wrapper">
-            <input type="text">
+            <input id="keyword" type="text" autocomplete="off">
             <span class="float-button">
                 <svg class="icon">
                     <use xlink:href="#icon-MIC"></use>
@@ -31,13 +32,14 @@
             </span>
         </span>
         <button>百度一下</button>
-        <ul class="suggestion">
+        <ul id="suggestion" class="suggestion">
             <li>1</li>
             <li>1</li>
             <li>1</li>
             <li>1</li>
         </ul>
     </div>
+    <script src="first.js"></script>
 </body>
 
 </html>
