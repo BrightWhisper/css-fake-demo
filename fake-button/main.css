@@ -1,0 +1,41 @@
+.fakeButton{
+    box-sizing: border-box;
+    display: inline-block;
+    background: none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 14px;
+    border:none;
+    transition: all 0.5s;
+    position:relative;
+    overflow:hidden;
+    z-index: 0;
+}
+.fakeButton:hover{
+    background: #e5e5e5;
+}
+.fakeButton:focus{
+    outline:none;
+    background: #e5e5e5;
+}
+.fakeButton > .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    margin-left: -5px;
+    margin-top: -5px;
+    transition: all 0.5s;
+    visibility: hidden;
+    z-index: -1;
+}
+.fakeButton > .circle.active{
+    transform: scale(10);
+    visibility: visible;
+}
